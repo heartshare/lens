@@ -43,6 +43,11 @@ export interface ClusterModel {
   metadata?: ClusterMetadata;
   ownerRef?: string;
   accessibleNamespaces?: string[];
+
+  /**
+   * @deprecated
+   */
+  kubeConfig?: string;
 }
 
 export interface ClusterPreferences {
